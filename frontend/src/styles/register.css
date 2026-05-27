@@ -1,0 +1,172 @@
+/* PAGE LAYOUT */
+
+.register-page{
+display:flex;
+height:100vh;
+background:#f9fafb;
+overflow:hidden;
+}
+
+/* LEFT SIDE */
+
+.register-left{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+}
+
+/* GLOW */
+
+.register-left::before{
+content:"";
+position:absolute;
+width:350px;
+height:350px;
+background:#22c55e;
+filter:blur(120px);
+opacity:0.18;
+top:20%;
+left:35%;
+border-radius:50%;
+}
+
+/* REGISTER CARD */
+
+.register-container{
+background:#ffffff;
+padding:45px;
+border-radius:12px;
+width:360px;
+border:1px solid #e5e7eb;
+box-shadow:0 15px 40px rgba(0,0,0,0.1);
+z-index:2;
+}
+
+.register-container h2{
+text-align:center;
+margin-bottom:30px;
+color:#111827;
+}
+
+/* INPUTS */
+
+.register-container input,
+.role-select{
+width:100%;
+padding:14px;
+margin-bottom:18px;
+border-radius:8px;
+border:1px solid #d1d5db;
+background:#f9fafb;
+color:#111827;
+font-size:15px;
+transition:0.2s;
+}
+
+.register-container input:focus,
+.role-select:focus{
+outline:none;
+border-color:#22c55e;
+box-shadow:0 0 6px rgba(34,197,94,0.3);
+}
+
+/* BUTTON */
+
+.register-btn{
+width:100%;
+padding:14px;
+background:#22c55e;
+border:none;
+border-radius:8px;
+color:white;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:0.25s;
+}
+
+.register-btn:hover{
+background:#16a34a;
+transform:translateY(-2px);
+box-shadow:0 6px 15px rgba(34,197,94,0.3);
+}
+
+/* EXTRA */
+
+.register-extra{
+text-align:center;
+margin-top:15px;
+color:#6b7280;
+}
+
+.register-extra span{
+color:#22c55e;
+cursor:pointer;
+font-weight:600;
+}
+
+.register-extra span:hover{
+text-decoration:underline;
+}
+
+/* RIGHT SIDE */
+
+.register-right{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#ecfdf5;
+position:relative;
+}
+
+/* TEXT */
+
+.welcome-text{
+text-align:center;
+z-index:2;
+}
+
+.welcome-text h1{
+font-size:70px;
+color:#22c55e;
+}
+
+.tagline{
+margin-top:20px;
+color:#6b7280;
+max-width:400px;
+}
+
+/* PARTICLES */
+
+.bg-animation span{
+position:absolute;
+width:12px;
+height:12px;
+background:#22c55e;
+opacity:0.18;
+border-radius:50%;
+animation:floatUp 12s linear infinite;
+}
+
+@keyframes floatUp{
+0%{ transform:translateY(100vh) scale(0);}
+100%{ transform:translateY(-10vh) scale(1.5);}
+}
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+
+.register-page{
+flex-direction:column;
+}
+
+.register-right{
+display:none;
+}
+
+}

@@ -1,0 +1,218 @@
+/* ================= LANDING PAGE ================= */
+
+.landing-page{
+font-family:"Poppins", Arial, Helvetica, sans-serif;
+background:#f3f4f6;
+min-height:100vh;
+color:#111827;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.landing-navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+background:#1f2937;
+color:white;
+}
+
+.landing-logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.landing-logo img{
+height:40px;
+}
+
+.landing-logo h2{
+margin:0;
+font-size:22px;
+color:white;
+}
+
+.landing-nav-buttons{
+display:flex;
+gap:15px;
+}
+
+.landing-nav-buttons button{
+padding:8px 18px;
+border-radius:6px;
+cursor:pointer;
+font-weight:500;
+background:transparent;
+color:#22c55e;
+border:1px solid #22c55e;
+transition:0.25s;
+}
+
+.landing-nav-buttons button:hover{
+background:#22c55e;
+color:white;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+background:linear-gradient(135deg,#1f2937,#0f172a,#020617);
+color:white;
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:15px;
+font-weight:700;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+color:#cbd5e1;
+}
+
+.cta{
+padding:12px 28px;
+background:#22c55e;
+border:none;
+border-radius:6px;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.25s;
+}
+
+.cta:hover{
+background:#16a34a;
+}
+
+
+/* ================= FEATURES ================= */
+
+.features-section{
+padding:80px 20px;
+text-align:center;
+background:#f3f4f6;
+}
+
+.features-section h2{
+margin-bottom:50px;
+font-size:32px;
+}
+
+.features{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+
+/* FEATURE CARD */
+
+.feature-card{
+background:white;
+padding:25px;
+width:240px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.feature-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
+
+.feature-card h3{
+margin-top:10px;
+}
+
+.feature-card p{
+font-size:14px;
+color:#6b7280;
+}
+
+
+/* ================= COURSES ================= */
+
+.featured-courses{
+padding:80px 20px;
+text-align:center;
+background:#f9fafb;
+}
+
+.course-preview{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:40px;
+margin-top:40px;
+}
+
+.preview-card{
+background:white;
+padding:30px;
+width:240px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.preview-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
+
+.preview-card img{
+width:70px;
+margin-bottom:15px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer{
+background:#020617;
+color:white;
+padding:40px 100px;
+margin-top:80px;
+}
+
+.footer-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.footer-right{
+display:flex;
+gap:25px;
+}
+
+.footer-right a{
+color:#22c55e;
+text-decoration:none;
+}
+
+.footer-right a:hover{
+text-decoration:underline;
+}
+
+.footer-bottom{
+margin-top:20px;
+text-align:center;
+font-size:13px;
+color:#9ca3af;
+}
+.footer-right a{
+cursor:pointer;
+}
